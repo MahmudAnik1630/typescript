@@ -190,6 +190,23 @@ class Student{
 
 let std1= new Student('Anik');
 std1.greet();
+
+
+class StudentLeader extends Student{
+
+    constructor(name:string){
+        super(name);
+    }
+
+    meeting(){
+
+        console.log("Having a meeting with student leader " + this.studentName);
+    }
+}
+
+let leader1=new StudentLeader('Sarkar');
+leader1.meeting();
+leader1.greet();
    
 
 
