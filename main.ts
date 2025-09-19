@@ -84,3 +84,16 @@ if(hasName(variable2)){
 // console.log(variable2.name);
 // variable2.name();
 
+
+// union
+
+let multiType: number | boolean;
+multiType = 20;
+multiType = true;
+
+// multiType = "hello"; // error
+
+
+console.log(multiType);
+
+
