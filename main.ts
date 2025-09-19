@@ -19,7 +19,28 @@ console.log(text);
 let isBeginner: boolean = true;
 let age: number = 28;
 let name: string = 'Anik';
+// name =true;
 
-let sentence = `My name is ${name} and age is ${age} boolean value is = ${isBeginner}`;
+
+name = 'Sarkar';
+// intelegence
+
+
+let sentence = `My name is ${name.toUpperCase()} and age is ${age} boolean value is = ${isBeginner}`;
 console.log(sentence);
+
+let n: null = null;
+let u: undefined = undefined;
+// array
+
+let list1:number []=[10,20,30];
+console.log(list1[2]);
+
+let list2 : Array<number> =[40,50,60];
+console.log(list2[1]);
+
+
+// tuple
+let Myprofile:[string,number]=['anik',28];
+console.log(`my name is ${Myprofile[0].toUpperCase()}`);
 
