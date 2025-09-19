@@ -77,3 +77,20 @@ multiType = 20;
 multiType = true;
 // multiType = "hello"; // error
 console.log(multiType);
+// function
+function add(number1, number2) {
+    return number1 + number2;
+}
+console.log(add(10, 20));
+// console.log(add(10,'anik')); // error
+// optional parameter
+function ShowNumber(number1, number2) {
+    if (number2) {
+        return console.log(number1 + " and " + number2);
+    }
+    else {
+        return console.log(number1);
+    }
+}
+ShowNumber(1000);
+ShowNumber(1000, 2000);

@@ -96,4 +96,31 @@ multiType = true;
 
 console.log(multiType);
 
+// function
+
+function add(number1:number ,number2:number):number 
+// return type number
+{
+    return number1 + number2;
+}
+console.log(add(10,20));
+// console.log(add(10,'anik')); // error
+
+
+// optional parameter
+ function ShowNumber(number1:number ,number2?:number):void{
+
+    if (number2){
+      return  console.log(number1 +  " and " + number2);
+    }
+    else{
+       return console.log(number1);
+    }
+ }
+
+   ShowNumber(1000);
+    ShowNumber(1000,2000);
+
+
+
 
