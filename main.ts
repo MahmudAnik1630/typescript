@@ -54,3 +54,33 @@ enum color {red , green=100 ,blue}
 let d: color = color.green;
 console.log(d);
 
+// any
+let variable :any =10;
+console.log(variable);
+variable = 'hello';
+console.log(variable);
+variable = true;
+console.log(variable);
+
+// Problem with any
+// variable is going to be a function but no error is being shown
+
+// variable.name();
+// variable();
+
+// unknown
+let variable2 : unknown = 10;
+
+variable2={name: "anik"};
+function hasName(obj:any): obj is {name:string}{
+    return !!obj &&
+    typeof obj === "object" &&
+    "name" in obj
+}
+
+if(hasName(variable2)){
+    console.log( "unknown variable" +variable2.name);
+}
+// console.log(variable2.name);
+// variable2.name();
+

@@ -47,3 +47,27 @@ var color;
 })(color || (color = {}));
 var d = color.green;
 console.log(d);
+// any
+var variable = 10;
+console.log(variable);
+variable = 'hello';
+console.log(variable);
+variable = true;
+console.log(variable);
+// Problem with any
+// variable is going to be a function but no error is being shown
+// variable.name();
+// variable();
+// unknown
+var variable2 = 10;
+variable2 = { name: "anik" };
+function hasName(obj) {
+    return !!obj &&
+        typeof obj === "object" &&
+        "name" in obj;
+}
+if (hasName(variable2)) {
+    console.log("unknown variable" + variable2.name);
+}
+// console.log(variable2.name);
+// variable2.name();
