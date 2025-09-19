@@ -30,3 +30,20 @@ console.log(list2[1]);
 // tuple
 var Myprofile = ['anik', 28];
 console.log("my name is ".concat(Myprofile[0].toUpperCase()));
+// enum
+var Color;
+(function (Color) {
+    Color[Color["red"] = 0] = "red";
+    Color[Color["green"] = 1] = "green";
+    Color[Color["blue"] = 2] = "blue";
+})(Color || (Color = {}));
+var c = Color.green;
+console.log(c);
+var color;
+(function (color) {
+    color[color["red"] = 0] = "red";
+    color[color["green"] = 100] = "green";
+    color[color["blue"] = 101] = "blue";
+})(color || (color = {}));
+var d = color.green;
+console.log(d);

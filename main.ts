@@ -44,3 +44,13 @@ console.log(list2[1]);
 let Myprofile:[string,number]=['anik',28];
 console.log(`my name is ${Myprofile[0].toUpperCase()}`);
 
+
+// enum
+enum Color {red , green ,blue}
+let c: Color = Color.green;
+console.log(c);
+
+enum color {red , green=100 ,blue}
+let d: color = color.green;
+console.log(d);
+
