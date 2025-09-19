@@ -94,3 +94,14 @@ function ShowNumber(number1, number2) {
 }
 ShowNumber(1000);
 ShowNumber(1000, 2000);
+//    default parameter
+function ShowNumber2(number11, number12) {
+    if (number12 === void 0) { number12 = 150; }
+    if (number12) {
+        return console.log(number11 + " and " + number12);
+    }
+    else {
+        return console.log(number11);
+    }
+}
+ShowNumber2(1000);

@@ -119,8 +119,23 @@ console.log(add(10,20));
  }
 
    ShowNumber(1000);
-    ShowNumber(1000,2000);
+   ShowNumber(1000,2000);
 
+//    default parameter
+
+
+ function ShowNumber2(number11:number ,number12:number=150):void{
+
+    if (number12){
+      return  console.log(number11 +  " and " + number12);
+    }
+    else{
+       return console.log(number11);
+    }
+ }
+
+   ShowNumber2(1000);
+   
 
 
 
