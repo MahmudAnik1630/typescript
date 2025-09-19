@@ -122,3 +122,15 @@ var p1 = {
     age: 28
 };
 AboutMe(p1);
+// class
+var Student = /** @class */ (function () {
+    function Student(name) {
+        this.studentName = name;
+    }
+    Student.prototype.greet = function () {
+        console.log('good morning ' + this.studentName);
+    };
+    return Student;
+}());
+var std1 = new Student('Anik');
+std1.greet();

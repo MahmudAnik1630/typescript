@@ -169,6 +169,27 @@ let p1={
 }
 
 AboutMe(p1);
+
+// class
+
+class Student{
+
+    studentName!: string;
+
+    constructor(name:string){
+        this.studentName=name;
+    }
+
+    greet(){
+        console.log('good morning '+ this.studentName);
+
+    }
+
+
+}
+
+let std1= new Student('Anik');
+std1.greet();
    
 
 
