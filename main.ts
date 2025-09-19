@@ -135,6 +135,40 @@ console.log(add(10,20));
  }
 
    ShowNumber2(1000);
+
+//    interface
+
+function FullName ( person:{firstName:string , lastName:string}){
+    console.log( person.firstName + " " + person.lastName);
+}
+
+let p ={
+
+    firstName : "Anik",
+    lastName : "Mahmud"
+}
+
+FullName(p);
+
+
+interface Person {
+
+    Name: string,
+    age: number
+}
+
+function AboutMe ( person:Person){
+
+    console.log(person.Name + " " + person.age);
+}
+
+let p1={
+
+    Name : "Anik",
+    age : 28
+}
+
+AboutMe(p1);
    
 
 

@@ -105,3 +105,20 @@ function ShowNumber2(number11, number12) {
     }
 }
 ShowNumber2(1000);
+//    interface
+function FullName(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+var p = {
+    firstName: "Anik",
+    lastName: "Mahmud"
+};
+FullName(p);
+function AboutMe(person) {
+    console.log(person.Name + " " + person.age);
+}
+var p1 = {
+    Name: "Anik",
+    age: 28
+};
+AboutMe(p1);
