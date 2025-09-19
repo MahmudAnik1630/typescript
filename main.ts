@@ -207,6 +207,11 @@ class StudentLeader extends Student{
 let leader1=new StudentLeader('Sarkar');
 leader1.meeting();
 leader1.greet();
+
+// access modifier
+// public
+// private
+// protected
    
 
 

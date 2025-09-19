@@ -162,3 +162,7 @@ var StudentLeader = /** @class */ (function (_super) {
 var leader1 = new StudentLeader('Sarkar');
 leader1.meeting();
 leader1.greet();
+// access modifier
+// public
+// private
+// protected
